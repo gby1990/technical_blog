@@ -1,0 +1,10 @@
+command line
+
+gcc -c main.c math.c display.c
+gcc -o prog main.o math.o display.o 
+gcc -Xlinker -Map=prog.map -Xlinker --cref main.o math.o display.o 
+python read_cref.py prog.map prog.dot
+dot -Tpng prog.dot -o prog.png
+//open the prog.png to verif if the pic is right one
+in linux you can use this command: eog prog.png
+

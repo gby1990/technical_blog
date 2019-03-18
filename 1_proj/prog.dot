@@ -1,0 +1,28 @@
+digraph "" {
+	"main.o" -> "display.o" [key=0,
+	label=welcom];
+"main.o" -> "math.o" [key=0,
+label=secondNum];
+"main.o" -> "/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o" [key=0,
+label=_GLOBAL_OFFSET_TABLE_];
+"/usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)" -> "/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o" [key=0,
+label=_GLOBAL_OFFSET_TABLE_];
+"/usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)" -> "/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o" [key=0,
+label=_init];
+"display.o" -> "/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o" [key=0,
+label=_GLOBAL_OFFSET_TABLE_];
+"display.o" -> "/lib/x86_64-linux-gnu/libc.so.6" [key=0,
+label=puts];
+"/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o" -> "main.o" [key=0,
+label=main];
+"/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o" -> "/usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)" [key=0,
+label=__libc_csu_init];
+"/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o" -> "/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o" [key=0,
+label=_GLOBAL_OFFSET_TABLE_];
+"/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o" -> "/usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o" [key=0,
+label=__TMC_END__];
+"/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2" -> "/lib/x86_64-linux-gnu/libc.so.6" [key=0,
+label="calloc@@GLIBC_2.2.5"];
+"/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o" -> "/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o" [key=0,
+label=_GLOBAL_OFFSET_TABLE_];
+}
